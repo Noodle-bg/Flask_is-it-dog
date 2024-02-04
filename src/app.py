@@ -34,7 +34,7 @@ app = Flask(__name__)
 CORS(app, support_credentials=True)
 
 # load the learner
-learn = load_learner(path='./models', file='trained_model.pkl')
+learn = load_learner(path='./src', file='model_dogs_and_cats.pkl')
 classes = learn.data.classes
 
 
